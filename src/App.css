@@ -7,7 +7,7 @@
 
 .App-header {
   background-color: #9CC7EA;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -465,8 +465,8 @@
   border: 5px solid black;
 }
 
-.CardPic{
-  border: 3px solid white;
+.EventPic{
+  border: 3px solid black;
 }
 
 .ProjectTitle{

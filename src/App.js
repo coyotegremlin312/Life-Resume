@@ -173,13 +173,14 @@ class Projects extends Component {
           <header className="PathTitle">Projects</header>
         </header>
         <div className="Space">
-          <a href="https://glacial-inlet-67939.herokuapp.com/"><img className="CardPic" src={Card}></img></a>
+          <a href="https://glacial-inlet-67939.herokuapp.com/"><img className="EventPic" src={Card}></img></a>
           <header className="ProjectTitle">Interactive Christmas Card</header>
         </div>
         <div className="Space"></div>
-        <div className="Space"></div>
+        <div className="Space">
           <a href="https://peaceful-forest-71977.herokuapp.com/"><img className="EventPic" src={Event}></img></a>
           <header className="ProjectTitle">Event Planner</header>
+        </div>
       </div>
     )
   }
