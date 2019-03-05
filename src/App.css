@@ -7,7 +7,7 @@
 
 .App-header {
   background-color: #9CC7EA;
-  height: 500px;
+  height: 430px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -101,7 +101,7 @@
   font-weight: bold;
   text-shadow: 1px 1px black;
   font-size: 40px;
-  min-height: 400px;
+  min-height: 450px;
   background-color: white;
   min-width: 710px;
   flex-basis: auto;
@@ -114,6 +114,7 @@
   text-align: center;
   padding-top: 80px;
   flex-basis: auto;
+  color: white;
 }
 
 .ProjectsLabel{
@@ -123,6 +124,7 @@
   text-align: center;
   padding-top: 80px;
   flex-basis: auto;
+  color: white;
 }
 
 .ContactLabel{
@@ -132,6 +134,7 @@
   text-align: center;
   padding-top: 80px;
   flex-basis: auto;
+  color: white;
 }
 
 .CollegeSection{
@@ -261,7 +264,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
   min-height: 450px;
   border: 5px solid black;
   padding: 15px;
@@ -392,6 +394,16 @@
   background-color: white;
 }
 
+.StudentTeachAssignmentCard{
+  height: 250px;
+  max-width: 650px;
+  padding: 10px;
+  border: 3px solid black;
+  font-family: American Typewriter;
+  font-size: 18px;
+  background-color: white;
+}
+
 .HighSchoolAssignmentTitle{
   text-align: center;
   font-size: 40px;
@@ -400,6 +412,16 @@
   background-color: #D54041;
   margin-bottom: 10px;
 }
+
+.StudentTeachAssignmentTitle{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  height: 50px;
+  background-color: #3B8C83;
+  margin-bottom: 10px;
+}
+
 
 .ChangeBigSpace{
   background-color: #EA4637;

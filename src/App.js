@@ -7,10 +7,13 @@ import Apple from './apple.png';
 import Stop from './stop.png';
 import Thailand from './thailand.png';
 import TukTuk from './tuktuk.png';
+import StudentTeacher from './studentteach.png';
 import School from './school.png';
 import Programmer from './programmerGirl.png';
 import Card from './card.png';
 import Event from './event.png';
+import Tracker from './tracker.png';
+import Cat from './gitcat.png'
 import Computer from './computer.png';
 import Wheel from './wheel.png';
 import Linked from './linked.png';
@@ -37,9 +40,9 @@ class App extends Component {
           </div>
         </header>
         <div className="Sections">
-          <p className="CCLabel">College<br/>&<br/>Career</p>
-          <div className="ProjectsLabel">Projects</div>
-          <p className="ContactLabel">Contact <br/> Me</p>
+          <a className="CCLabel" href="#College-finder" style={{textDecoration: 'none'}}>College<br/>&<br/>Career</a>
+          <a className="ProjectsLabel" href="#Start-Projects-Section" style={{textDecoration: 'none'}}>Projects</a>
+          <a className="ContactLabel" href="#FindMeStart-section" style={{textDecoration: 'none'}}>Contact <br/> Me</a>
         </div>
         <div className="CollegeSection">
           <College/>
@@ -68,7 +71,7 @@ class College extends Component {
   render() {
     return (
       <div className="College-section">
-        <header className="Start-section">
+        <header className="Start-section" id="College-finder">
           <img className="DownArrow" src={ArrowDown}></img>
           <header className="PathTitle">Start College</header>
         </header>
@@ -116,6 +119,23 @@ class Career extends Component {
             <p className="CSUNdegree"><strong>Certification Earned:</strong> <br/> Single Subject Teaching Credential, English</p>
           </div>
         </div>
+        <div className="HighSchoolSpace">
+          <div className="HighSchoolTopSection">
+            <img className="SchoolPhoto" src={StudentTeacher}></img>
+            <p className="SchoolInstructions">Student<br/>Teach</p>
+          </div>
+          <div className="StudentTeachAssignmentCard">
+            <div className="StudentTeachAssignmentTitle">Assignment Card</div>
+            <div className="Location"><strong>Location:</strong> Granada Hills Charter High School</div>
+            <div className="Length"><strong>Assignment Length:</strong> August 2015 - Dec 2015</div>
+            <div className="Role"><strong>Role:</strong> 11th Grade English Student Teacher</div>
+            <p className="Responsibilities">
+            <strong>Responsibilities:</strong> <br/>
+              + Utilized Google Classroom to administer assignments, give essay and journal feedback, and present educational media to students<br/>
+              + Practiced multimodal teaching methods to increase student engagement and student understanding<br/>
+            </p>
+          </div>
+        </div>
         <header className="Start-section">
           <img className="DownArrow" src={ArrowDown}></img>
           <header className="PathTitle">Start Career</header>
@@ -133,8 +153,8 @@ class Career extends Component {
             <p className="Responsibilities">
             <strong>Responsibilities:</strong> <br/>
               + Utilized Schoology software to input grades, give online assignments, and contact parents <br/>
-              + Prepared daily, weekly, and unit lesson plans <br/>
-              + Used positive behavior interventions and supports to create a harmonious classroom environment
+              + Applied mastery teaching techniques to promote and develop a growth mindset within students <br/>
+              + Prepared daily, weekly, and unit lesson plans
             </p>
             <p className="Extracurriculars">
             <strong>Extracurriculars: </strong><br/>
@@ -168,18 +188,24 @@ class Projects extends Component {
   render() {
     return(
       <div className="ProjectsSection">
-        <header className="Start-Projects-Section">
+        <header className="Start-Projects-Section" id="Start-Projects-Section">
           <img className="DownArrow" src={ArrowDown}></img>
           <header className="PathTitle">Projects</header>
         </header>
         <div className="Space">
           <a href="https://glacial-inlet-67939.herokuapp.com/"><img className="EventPic" src={Card}></img></a>
           <header className="ProjectTitle">Interactive Christmas Card</header>
+          <a href="https://github.com/coyotegremlin312/Christmas-Card"><img className="GitLogo" src={Cat}></img></a>
         </div>
-        <div className="Space"></div>
+        <div className="Space">
+          <a href="https://the-financial-tracker.herokuapp.com/"><img className="EventPic" src={Tracker}></img></a>
+          <header className="ProjectTitle">The Financial Tracker</header>
+          <a href="https://github.com/coyotegremlin312/The-Financial-Tracker"><img className="GitLogo" src={Cat}></img></a>
+        </div>
         <div className="Space">
           <a href="https://peaceful-forest-71977.herokuapp.com/"><img className="EventPic" src={Event}></img></a>
           <header className="ProjectTitle">Event Planner</header>
+          <a href="https://github.com/coyotegremlin312/Event-Planner"><img className="GitLogo" src={Cat}></img></a>
         </div>
       </div>
     )
@@ -190,7 +216,7 @@ class FindMe extends Component {
   render() {
     return(
       <div className="FindMeSection">
-        <div className="FindMeStart-section">Contact Me</div>
+        <div className="FindMeStart-section" id="FindMeStart-section">Contact Me</div>
         <div className="FindMeBigSpace">
           <a href="https://www.linkedin.com/in/ashleybrown121389/" className="Linked"><img className="linked" src={Linked}/></a>
           <img className="Wheel" src={Wheel}/>
