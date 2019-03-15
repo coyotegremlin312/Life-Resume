@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Profile from './profile.png';
 import ArrowDown from './downArrow.png';
 import Graduate from './graduate.png';
 import English from './english.png';
@@ -40,9 +41,15 @@ class App extends Component {
           </div>
         </header>
         <div className="Sections">
+          <a className="AboutMeLabel" href="#About-me" style={{textDecoration: 'none'}}>About Me</a>
           <a className="CCLabel" href="#College-finder" style={{textDecoration: 'none'}}>College<br/>&<br/>Career</a>
           <a className="ProjectsLabel" href="#Start-Projects-Section" style={{textDecoration: 'none'}}>Projects</a>
           <a className="ContactLabel" href="#FindMeStart-section" style={{textDecoration: 'none'}}>Contact <br/> Me</a>
+        </div>
+        <div className="AboutMeTitle" id="About-me">About Me</div>
+        <div className="AboutMeSection">
+          <img className="Me" src={Profile}></img>
+          <div className="MeDescription">Hello! My name is Ashley Brown, and I was born and bred in Los Angeles, CA. I enjoy writing, painting, and reading. Some of my favorite books include <i>The Sun Also Rises</i>, <i>The Great Gatsby</i>, and the <i>Harry Potter</i> series. I love food, making and eating it. I like to explore different types of cooking from specialized diets to the recipes of other cultures. I caught the traveling bug at nineteen and it has not waned since. My top three favorite cities are Paris, Pie, and Barcelona.</div>
         </div>
         <div className="CollegeSection">
           <College/>
@@ -154,7 +161,8 @@ class Career extends Component {
             <strong>Responsibilities:</strong> <br/>
               + Utilized Schoology software to input grades, give online assignments, and contact parents <br/>
               + Applied mastery teaching techniques to promote and develop a growth mindset within students <br/>
-              + Prepared daily, weekly, and unit lesson plans
+              + Prepared daily, weekly, and unit lesson plans <br/>
+              + Used Positive Behavior Interventions and Support to create a harmonious classroom
             </p>
             <p className="Extracurriculars">
             <strong>Extracurriculars: </strong><br/>
